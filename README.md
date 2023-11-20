@@ -10,7 +10,7 @@ As it stands, the config is defined in Ratran.Console's Program.cs, in a variabl
 The structure is as follows:
 * Project - defines the width and height of the gif, and a list of layers.
 * Layer - A list of segments.
-* Segment - A sequence of frames. Somewhat procedurally generated. There are currently two segments implemented:
+* Segment - A sequence of frames. Sequences are abstract, and can be whatever, as long as it outputs frames at the end of it. There are currently two segments implemented:
   * StillSegment - A single frame, that lasts a specified duration.
   * BlendAToBSegment - A animated transition between two frames (A and B).
 
